@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  width: 40%;
+}
+.mario_input {
+  background-color: aqua;
+}
+.mario_input:focus {
+  background-color: white;
+}
+
+label {
+  font-weight: 700;
+}
+
+p {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.submitbutton {
+  margin-top: 10px;
+}
