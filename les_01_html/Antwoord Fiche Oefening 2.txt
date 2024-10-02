@@ -1,0 +1,8 @@
+Oefening 2 1. Surf via Chrome of FireFox naar https://www.sportfocus.be
+2. Bekijk de broncode: F12
+3. Welke doctype wordt hier gebruikt? : HTML
+4. Welke title wordt hier gebruikt?: SportFocus vzw - Zwemlessen - Sportkampen - Voetbal
+5. Welke charset wordt hier gebruikt?UTF-8
+6. Valideer de webpagina. Is deze pagina valide? Nee,de pagina geeft 19 “errors” aan.
+7. In de code staat iets ivm met favicon <link rel="icon" href="***.png" /> Zoek op het internet wat dit stukje code betekent. Waar zie je het effect van deze lijn code in Chrome? Is het kleine icoontje(logo) in de browser naast uw tabbladen dit is afhankelijk van de website bron code;
+
