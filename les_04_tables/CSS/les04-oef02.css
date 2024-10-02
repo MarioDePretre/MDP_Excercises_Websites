@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.title {
+    background-color: #fa6432;
+    color: white;
+}
+
+.col1 {
+    border: 1px solid black;
+    width: 75px;
+    text-align: center;
+    background-color: #00283c;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+}

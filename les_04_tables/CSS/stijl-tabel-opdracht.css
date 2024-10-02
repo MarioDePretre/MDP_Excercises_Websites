@@ -1,0 +1,22 @@
+table {
+    margin: 20px 0;
+}
+
+table.border {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 2px #c03d1e;
+    border-collapse: collapse;
+    /* separate; */
+}
+
+table.border td {
+    border: solid 2px #c03d1e;
+    padding: 25px;
+}
+
+table.border th {
+    border: solid 2px #c03d1e;
+    padding: 5px;
+    background-color: #f4c4ba;
+}

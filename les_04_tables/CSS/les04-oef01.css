@@ -1,0 +1,28 @@
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+hr {
+    border: 1px solid #00283c;
+}
+
+table#entiteit {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 1px gray;
+    border-collapse: collapse;
+}
+
+table#entiteit td {
+    border: solid 1px gray;
+    padding: 15px;
+    text-align: center;
+}
+
+table#entiteit th {
+    border: solid 1px gray;
+    padding: 15px;
+    background-color: #00283c;
+    color: white;
+}
