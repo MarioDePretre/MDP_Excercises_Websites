@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: url("/img/kompas.jpg") center fixed no-repeat;
+  background-size: cover;
+}
+.north {
+  color: white;
+  position: fixed;
+  left: 50%;
+}
+.south {
+  color: white;
+  position: fixed;
+  left: 50%;
+  bottom: 0%;
+}
+
+.west {
+  color: white;
+  position: fixed;
+  top: 50%;
+}
+
+.east {
+  color: white;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+}
