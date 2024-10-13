@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <title>CSS deel 2 voorbeelden</title>
+
+    <style>
+      /* 
+            Tip: box-sizing: border-box;
+            Stel je voor dat je een kolom hebt met een breedte van 100px en een border van 5px.
+            Zonder box-sizing: border-box; zal je kolom uiteindelijk 105px breed zijn en dit zal in sommige gevallen problemen met zich meebrengen.
+            
+            Voorbeeld: Als je twee kolommen hebt van 50% en je hebt ook een border, padding en/of margin ingesteld zal er plaats tekort zijn om de twee kolommen naast elkaar te zetten
+            omdat je nu boven de 100% zit. 
+            Bekijk voorbeeld_box-sizing.html, hier staat box-sizing: border-box; in commentaar en zie wat er gebeurt.
+            Gebruik dus daarom box-sizing: border-box; zo zal de content zich automatisch aanpassen.      
+        */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+      }
+
+      .column-25 {
+        float: left;
+        width: 75%;
+        padding: 15px;
+        font-family: "Segoe UI";
+      }
+
+      /* Tip: stop het floaten van de kolommen */
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - wanneer het scherm kleiner is dan 600px zullen we de kolommen onder elkaar plaatsen door de breedte op 100% te zetten */
+
+      @media (width <=800px) {
+        .column,
+        .column-25 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="column">
+        <h2>Column</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+      </div>
+
+      <div class="column-25">
+        <h2>Column</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
