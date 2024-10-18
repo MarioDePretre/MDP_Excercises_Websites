@@ -20,9 +20,9 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  background-image: url(/img/banner.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url("https://fullstacked-mario.be/project1/img/banner.jpg");
+  background-color: #027373;
+  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 350px;
