@@ -1,0 +1,280 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url(https://fonts.googleapis.com/css?family=Lato:400|Raleway:400);
+
+* {
+  margin: 0;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin: 0;
+  padding: 0;
+  overflow-y: visible;
+}
+.img-card {
+  height: 200px;
+  width: auto;
+}
+
+.imgcv {
+  padding: 10px;
+  border-radius: 10%;
+}
+.footer {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #027373;
+  width: auto;
+  height: 50px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #a9d9d0 !important;
+}
+
+.custom-navbar {
+  background-color: #a9d9d0 !important;
+}
+.navbar-brand {
+  margin-left: 20px !important;
+}
+
+canvas {
+  opacity: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Het canvas achter de inhoud plaatsen */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: #2c2c2c;
+  min-width: 600px;
+  height: 100%;
+  font: 400 1em "Lato";
+  -webkit-font-smoothing: antialiased;
+}
+
+#timeline {
+  padding-top: 5%;
+}
+
+.timeline {
+  height: 100%;
+  position: relative;
+
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  figcaption {
+    font: 900 190% "Lato";
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.25px;
+  }
+
+  h2 {
+    font: 400 400% "Raleway";
+    padding-bottom: 100px;
+    color: #b2cde9;
+  }
+
+  h6 {
+    color: #0090f5;
+    font: 400 80% Tahoma;
+  }
+
+  p,
+  ol {
+    font: 400 95% "Raleway";
+    padding: 3px 0 20px 0;
+    color: #575757;
+    text-align: justify;
+    width: 70%;
+  }
+
+  ol {
+    list-style: disc;
+    margin-top: -20px;
+    padding-left: 40px;
+  }
+
+  figure {
+    float: right;
+    width: 100%;
+  }
+
+  article {
+    position: relative;
+    width: 38%;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    &:first-of-type {
+      float: left;
+      text-align: right;
+
+      p,
+      figure {
+        float: right;
+      }
+    }
+
+    &:last-of-type {
+      float: right;
+
+      h2 {
+        color: #c6e0aa;
+      }
+
+      h6,
+      a {
+        color: #40aa00;
+      }
+
+      a:hover {
+        color: #95d40d;
+      }
+    }
+  }
+}
+
+body {
+  background-color: #eee;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.card {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+    0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+    0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+    0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+  border-width: 0;
+  transition: all 0.2s;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(26, 54, 126, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.vertical-timeline {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 0 1rem;
+}
+
+.vertical-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 67px;
+  height: 100%;
+  width: 4px;
+  background: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.vertical-timeline-element {
+  position: relative;
+  margin: 0 0 1rem;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  visibility: visible;
+  animation: cd-bounce-1 0.8s;
+}
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.vertical-timeline-element-icon .badge-dot-xl {
+  box-shadow: 0 0 0 5px #fff;
+}
+
+.badge-dot-xl {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.badge:empty {
+  display: none;
+}
+
+.badge-dot-xl::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 0.25rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -5px 0 0 -5px;
+  background: #fff;
+}
+
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 90px;
+  font-size: 0.8rem;
+}
+
+.vertical-timeline-element-content .timeline-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  padding: 2px 0 0;
+  font-weight: bold;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  display: block;
+  position: absolute;
+  left: -90px;
+  top: 0;
+  padding-right: 10px;
+  text-align: right;
+  color: #adb5bd;
+  font-size: 0.7619rem;
+  white-space: nowrap;
+}
+
+.vertical-timeline-element-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}

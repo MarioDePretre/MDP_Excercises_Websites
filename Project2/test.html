@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Clipart Animatie</title>
+    <style>
+        #container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+        }
+
+        .computer,
+        .fullstacked {
+            position: absolute;
+            transition: all 1s ease;
+        }
+
+        .computer {
+            background-color: lightgray;
+            width: 60px;
+            height: 40px;
+            border: 2px solid gray;
+            bottom: 0;
+        }
+
+        .fullstacked {
+            background-color: darkgray;
+            width: 70px;
+            height: 50px;
+            display: none;
+            /* Begin verborgen */
+        }
+
+        /* Optionele styling voor de knoppen */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="computer"></div>
+        <div class="fullstacked"></div>
+    </div>
+    <button id="animateButton">Verander naar Fullstacked</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
