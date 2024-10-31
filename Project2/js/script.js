@@ -15,7 +15,7 @@
   window.addEventListener(`resize`, init);
 
   const cfg = {
-    bgFillColor: "rgba(255, 255, 255, 0.1)",
+    bgFillColor: "rgba(38,38,38,0.1)",
     dirsCount: 6,
     stepsToTurn: 20,
     dotSize: 4,
@@ -40,7 +40,7 @@
     }
 
     redrawDot() {
-      let color = "#027373";
+      let color = "#f9c74f";
       let size = cfg.dotSize;
       let blur = 0;
       let x = this.pos.x - size / 2;
@@ -114,10 +114,18 @@
   loop();
 })();
 
-// Initialize all popovers
-var popoverTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="popover"]'
 );
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl);
+const popoverList = [...popoverTriggerList].map(
+  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var popoverTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+  );
+  popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+  });
 });

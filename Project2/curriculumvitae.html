@@ -9,16 +9,16 @@
     <meta name="keywords"
         content="portfolio, Unreal Engine, Adobe, Illustrator, Programming, Csharp, Javascript, bootstrap, git, linux,Coding" />
     <meta name="author" content="Mario De Pretre">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://kit.fontawesome.com/ccc5e0f6e3.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
 </head>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <!--     
 ___________    .__  .__            __                 __              .___
 \_   _____/_ __|  | |  |   _______/  |______    ____ |  | __ ____   __| _/
@@ -26,170 +26,245 @@ ___________    .__  .__            __                 __              .___
  |     \ |  |  /  |_|  |__\___ \  |  |  / __ \\  \___|    <\  ___// /_/ | 
  \___  / |____/|____/____/____  > |__| (____  /\___  >__|_ \\___  >____ | 
      \/                       \/            \/     \/     \/    \/     \/ 
- --------------------------------------------------------------------------------------------------------------------------------------------------------->
+-->
 
 <body>
     <canvas></canvas>
-    <header class="container mt-0 p-0">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 mb-5">
-                <nav class="navbar navbar-expand-lg boxsizing head">
-                    <a class="navbar-brand head" href="index.html">Home</a>
-                    <a class="nav-link active head" aria-current="page" href="ervaring.html">Ervaring</a>
-                    <a class="nav-link head" href="curriculumvitae.html">Curriculum Vitae</a>
-                    <a class="nav-link head" href="hobbies.html">Hobbies</a>
-                    <a class="nav-link head" href="contact.html">Contact</a>
-                </nav>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg boxsizing head">
+                        <a class="navbar-brand nav-link head" href="index.html">Home</a>
+                        <a class="nav-link active head" aria-current="page" href="ervaring.html">Ervaring</a>
+                        <a class="nav-link head" href="curriculumvitae.html">Curriculum Vitae</a>
+                        <a class="nav-link head" href="hobbies.html">Hobbies</a>
+                        <a class="nav-link head" href="contact.html">Contact</a>
+                    </nav>
+                </div>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12 border-5">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="https://fullstacked-mario.be/img/banner.mp4" type="video/mp4">
-                </video>
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="/img//Banner.jpg" class="imgBanner" alt="billboard with commercial Fullstacked">
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row ">
 
-    <main>
-        <div class="container mt-5 p-5">
-            <div class="row ">
-                <div class="col-lg-6 align-content-lg-start">
-                    <img src="/img/rsz_1rsz_familie_klerkx-64-_zwart_wit.jpg" class="imgcv mx-auto mb-5"
-                        style="width: 500px;" alt="gezinsFoto"><img src="/img/rsz_1rsz_familie_klerkx-64-_zwart_wit.jpg"
-                        class="mx-auto mb-5 imgcv" style="width: 500px;" alt="gezinsFoto">
-                    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    <span class="item-h">STUDIES & OPLEIDINGEN:</span>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <li>Secundair onderwijs: BSO – Sint-Anna Instituut te Eeklo
-                                        Getuigschrift tweede graad – richting kantoor</li>
+                    <div class="col-md-6 projectTheme">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="/img/rsz_1rsz_familie_klerkx-64-_zwart_wit.jpg" class="imgcv mb-5"
+                                style="width: 500px;" alt="gezinsFoto">
+                            <img src="/img/rsz_1rsz_familie_klerkx-64-_zwart_wit.jpg" class="imgcv mb-5"
+                                style="width: 500px;" alt="gezinsFoto">
+                        </div>
+                    </div>
+                    <div class="col-md-6 projectTheme">
+                        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <h3 class="item-h">Studies&Opleidingen</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Secundair onderwijs: BSO – Sint-Anna Instituut te Eeklo Getuigschrift
+                                                tweede
+                                                graad – richting kantoor</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    <span class="item-h">Bijkomende opleidingen::</span>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <li>2016: VDAB Genk Zuid – Opleiding magazijnmedewerker</li>
-                                    <li>2016: Syntra West-Limburg – Opleiding Initiator fitness – diploma behaald</li>
-                                    <li>2012: Bestburo – Doorgedreven opleiding Excel</li>
-                                    <li>2010: Syntra West – Bedrijfsbeheer</li>
-
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <h3 class="item-h">Bijkomende opleidingen</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>2018: 2012: Bestburo – Doorgedreven opleiding Excel</li>
+                                            <li>2016: VDAB Genk Zuid – Opleiding magazijnmedewerker</li>
+                                            <li>2015: Syntra West-Limburg – Opleiding Initiator fitness</li>
+                                            <li>2010: Syntra West – Bedrijfsbeheer</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    <span class="item-h">COMPETENTIES / Persoonlijk:</span>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <li>Gemotiveerd en leergierig Flexibel</li>
-                                    <li>kan me snel aanpassen aan veranderende situaties</li>
-                                    <li>Stipt, correcte arbeidsattitude Teamplayer</li>
-                                    <li>Talenkennis:
-                                        Nederlands: Moedertaal Engels: Goede spreek- en schrijfvaardigheid Frans: Matige
-                                        spreekvaardigheid</li>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <h3 class="item-h">Competenties</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Gemotiveerd en leergierig Flexibel</li>
+                                            <li>kan me snel aanpassen aan veranderende situaties</li>
+                                            <li>Stipt, correcte arbeidsattitude Teamplayer</li>
+                                            <hr>
+                                            Talenkennis:
+                                            <li> Nederlands: Moedertaal</li>
+                                            <li>Engels: Goede spreek- en schrijfvaardigheid</li>
+                                            <li>Frans: Matige spreekvaardigheid</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        <h3 class="item-h">Future Plans</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Er is altijd iets nieuws te leren, en dat maakt het werk spannend. Mijn doel
+                                        is
+                                        om
+                                        voortdurend betere oplossingen te bieden en waarde toe te voegen aan elk
+                                        project
+                                        dat
+                                        ik aanneem. Bedankt voor je interesse in mijn werk! Als je vragen hebt of
+                                        meer
+                                        wilt
+                                        weten, voel je vrij om contact met me op te nemen. Ik kijk ernaar uit om van
+                                        je
+                                        te
+                                        horen!
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <!-- Section: Timeline -->
-                    <section class="py-5">
-                        <ul class="timeline mb-0 offset-3">
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2024 - carrière switch</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Thomas More Geel</p>
-                                <p= class="Text-base">
-                                    Graduaat Programmeren
-                                    </p>
-                            </li>
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2021</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Ravago Lommel</p>
-                                <p= class="Text-base">
-                                    Logistiek bediende transport
-                                    </p>
-                            </li>
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2021</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Electronite Houthalen</p>
-                                <p= class="Text-base">
-                                    Magazijnmedewerker(allround)
-                                    </p>
-                            </li>
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2018</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Claes Machines Beringen</p>
-                                <p= class="Text-base">
-                                    Magazijnbediende
-                                    </p>
-                            </li>
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2017</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Nitto Diepenbeek</p>
-                                <p class="Text-base">
-                                    Magazijnmedewerker – wisselende ploegen; laden en lossen van goederen
-                                </p>
-                            </li>
-
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2016</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Essers Genk</p>
-                                <p class="Text-base">
-                                    Orderpicker in vaste nacht
-                                </p>
-                            </li>
-
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2011</h5>
-                                <p class="Text-basemid mb-2 fw-bold">Sova Plastics Tielt</p>
-                                <p class="Text-base">
-                                    Productie arbeider
-                                </p>
-                            </li>
-
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold Text-baseHead">2008</h5>
-                                <p class="Text-basemid mb-2 fw-bold">cafe</p>
-                                <p class="Text-base">
-                                    Zelfstandig statuut
-                            </li>
-                        </ul>
-                    </section>
-                    <!-- Section: Timeline -->
+            </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col">
+            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2003" data-bs-content="Cafe 'DeVrede' Veldegem">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2008</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">Cafe uitbater</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2004" data-bs-content="Sova Plastics Tielt">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2011</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">Productie Arbeider</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2005" data-bs-content="Essers Genk">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2016</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">Orderpicker</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2010" data-bs-content="Nitto Diepenbeek">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2017</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">magazijnmedewerker</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2020"
+                        data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2018</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">Magazijnbediende</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2020" data-bs-content="Electro Nite Houthalen">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2021</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">magazijnmedewerker</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-title="2020" data-bs-content="Ravago Lommel">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 Text-base">2022</p>
+                        <p class="h6 mb-0 mb-lg-0 Text-base">Magazijnbediende</p>
+                    </div>
                 </div>
             </div>
-    </main>
-    <footer class="container mt-5">
-        <div class="row footer">
-            <p>test</p>
         </div>
-    </footer>
+    </div>
+    </main>
+    <div class="container mt-5">
+        <footer class="text-center" style="background-color: #d99748">
+            <div class="container">
+                <section class="mt-5">
+                    <div class="row">
+                        <div class="col"><a class="nav-link footer" href="index.html">Home</a></div>
+                        <div class="col"><a class="nav-link active footer" aria-current="page"
+                                href="ervaring.html">Ervaring</a></div>
+                        <div class="col"><a class="nav-link footer" href="curriculumvitae.html">Curriculum Vitae</a>
+                        </div>
+                        <div class="col"><a class="nav-link footer" href="hobbies.html">Hobbies</a></div>
+                        <div class="col"><a class="nav-link footer" href="contact.html">Contact</a></div>
+                    </div>
+                    <hr>
+                </section>
+                <section class="text-center p-2">
+                    <div class="row">
+                        <div class="col"> <a href="" class="footer nav-link  me-4" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a></div>
+                        <div class="col"> <a href="" class="footer nav-link me-4" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a></div>
+                        <div class="col"> <a href="" class="footer nav-link me-4" title="Google">
+                                <i class="fab fa-google"></i>
+                            </a></div>
+                        <div class="col"> <a href="" class="footer nav-link me-4" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a></div>
+                        <div class="col"> <a href="" class="footer nav-link me-4" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a></div>
+                        <div class="col"> <a href="" class="footer nav-link me-4" title="Github">
+                                <i class="fab fa-github"></i>
+                            </a></div>
+                    </div>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Fullstacked
+            </div>
+        </footer>
+    </div>
 </body>
 
 
