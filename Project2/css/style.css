@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift");
 
 * {
   margin: 0;
@@ -16,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  font-family: Bahnschrift, sans-serif !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   overflow: auto;
   background-color: #262626 !important;
 }
@@ -40,10 +39,10 @@ body {
   color: #262626 !important;
 }
 .icons {
+  padding: 40px;
   margin-bottom: 50px;
-  width: 100%;
-  height: 250px;
-  align-items: center;
+  width: auto;
+  height: 200px;
 }
 .iconsCont {
   width: 250px;
@@ -86,14 +85,13 @@ body {
 .card-body {
   background-color: #262626;
   color: #d99748 !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: larger;
+  font-size: 1rem;
   height: auto !important;
+  padding: 25px;
 }
 .imgcv {
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 10.5%;
+  height: 200px;
+  width: auto;
 }
 
 .footer {
@@ -107,7 +105,6 @@ body {
 
 .card {
   background-color: #d99748 !important;
-  width: 300px;
 }
 
 .accordion {
@@ -144,6 +141,10 @@ body {
 .boxsizing {
   z-index: 5;
 }
+.overlay {
+  border-radius: 10%;
+  border: #d99748 solid 2px !important;
+}
 
 .item-h {
   font-size: 1.2rem;
@@ -154,7 +155,7 @@ body {
 header {
   position: relative;
   background-color: black;
-  height: 500px;
+  height: 350px;
   width: auto;
   overflow: hidden;
 }
@@ -255,8 +256,43 @@ canvas {
   margin: 10px;
 }
 .imgBanner {
-  height: 500px;
+  position: absolute;
+  object-fit: fill;
+  height: 300px;
   width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 500px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body img,
+.card-body .ratio {
+  max-height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+.custom-c {
+  height: 150px !important;
+  max-height: 200px !important;
+}
+.custom-card {
+  height: auto !important;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.bd {
+  border: none;
+  border-top: 2px solid #d99748;
 }
 @media (max-width: 768px) {
   header {
@@ -372,4 +408,12 @@ canvas {
   min-width: 3rem;
   border-radius: 6.25rem;
   opacity: 0.5;
+}
+.iconsHob {
+  border: #d99748 solid 2px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  opacity: 80%;
 }
